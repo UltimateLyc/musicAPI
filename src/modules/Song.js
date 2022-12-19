@@ -1,14 +1,18 @@
 import { DataTypes } from 'sequelize'
 import { sequelize } from '../database/database.js'
 
-export const Mode = sequelize.define('mode',{
-    id_mode:{
+export const Song = sequelize.define('song', {
+    id_somg: {
         type: DataTypes.INTEGER,
         autoIncrement: true,
         primaryKey: true
     },
     name: {
-        type: DataTypes.BOOLEAN,
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    popularity: {
+        type: DataTypes.INTEGER,
         allowNull: false
     }
 })
