@@ -25,7 +25,7 @@ export const Artist = sequelize.define('artist', {
 
 Artist.hasMany(Album,{
     foreignKey: 'id_artist',
-    sourceKey: 'id_artist'
+    sourceKey: 'id_artist' // source => origen
 })
 
 Album.belongsTo(Artist,{
