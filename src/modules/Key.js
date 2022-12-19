@@ -6,5 +6,9 @@ export const Key = sequelize.define('key',{
         type: DataTypes.INTEGER,
         autoIncrement: true,
         primaryKey: true
+    },
+    name: {
+        type: DataTypes.INTEGER,
+        allowNull: false
     }
 })
